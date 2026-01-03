@@ -1,0 +1,81 @@
+body {
+  background-color: #f0f2f5;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+} 
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 40px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+}
+
+.cursor-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  width: 180px;
+}
+
+.card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+  opacity: 0.7;
+}
+
+.card h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.card p {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+}
+
+.default {
+  cursor: url("./cursors/cursor-48.png"), auto;
+}
+
+.pointer {
+  cursor: url("./cursors/hand-cursor-48.png"), auto;
+}
+
+.text {
+  cursor: url("./cursors/text-cursor-48.png"), auto;
+}
+
+.move {
+  cursor: url("./cursors/move-32.png"), auto;
+}
+
+.crosshair {
+  cursor: url("./cursors/crosshair-32.png"), auto;
+}
+
+.wait {
+  cursor: url("./cursors/spinner-32.png"), auto;
+}
